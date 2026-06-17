@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zootopia Robot Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+    <div class="logo">Zootopia Robot Shop</div>
+    
+    <input type="checkbox" id="menu-toggle" style="display:none;">
+    <label for="menu-toggle" class="menu-icon">☰</label>
+    
+    <label for="menu-toggle" class="overlay"></label>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#robots">Robots</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+    <div class="hero">
+        <div class="hero-text">
+            <p class="small-title">FUTURE AI PET SHOP</p>
+            <h1>당신의 삶을 채워줄 <br>반려로봇을 만나보세요.</h1>
+            <p class="hero-description">외로움을 달래줄 귀엽고 똑똑한 미래형 인공지능 로봇 친구들을 소개합니다.<br> 매일이 즐거워지는 스마트한 반려 생활을 지금 경험해 보세요.</p>
+            <div class="hero-buttons">
+                <a href="#robots" class="btn first"> 로봇 보러가기</a>
+            </div>
+        </div>
+    </div>
+    
+    <section id="about">
+        <h2>소개</h2>
+        <p>저희 Zootopia Robot Shop은 사람과 감정을 교류하고 일상에 행복을 더해주는 특별한 반려로봇을 만나는 곳 입니다.</p>
+        <div class="skills">
+            <span>#인공지능_교감</span>
+            <span>#자율_주행</span>
+            <span>#자동_충전</span>
+        </div>
+        </section>
+
+    <section id="robots">
+        <h2>로봇</h2>
+       <ul class="portfolio-grid">
+            <a href="fox.html" target="_blank" style="text-decoration: none; color: inherit;">
+                <li class="card">
+                    <div class="card-img">
+                        <img src="fox.png" alt="사막여우 로봇" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+                    </div>
+                    <h3>사막여우 로봇</h3>
+                    <p>큰 귀로 주인의 숨소리까지 찾아내어 곁을 지켜주는 든든한 보디가드 로봇입니다.</p>
+                </li>
+            </a>
+
+            <a href="cat.html" target="_blank" style="text-decoration: none; color: inherit;">
+                <li class="card">
+                    <div class="card-img">
+                        <img src="cat.png" alt="고양이 로봇" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+                    </div>
+                    <h3>고양이 로봇</h3>
+                    <p>주인의 감정을 읽고 따뜻하게 반응하는 <br> 섬세한 교감형 로봇입니다.</p>
+                </li>
+            </a>
+
+            <a href="hamster.html" target="_blank" style="text-decoration: none; color: inherit;">
+                <li class="card">
+                    <div class="card-img">
+                        <img src="hamster.png" alt="햄스터 로봇" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+                    </div>
+                    <h3>햄스터 로봇</h3>
+                    <p>주머니 속에 쏙 들어가는 크기로 언제 <br>어디서나 함께하는 미니 로봇입니다.</p>
+                </li>
+            </a>
+
+            <a href="dog.html" target="_blank" style="text-decoration: none; color: inherit;">
+                <li class="card">
+                    <div class="card-img">
+                        <img src="dog.png" alt="강아지 로봇" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+                    </div>
+                    <h3>강아지 로봇</h3>
+                    <p>주인을 보면 꼬리를 흔들며 반겨주는 <br>똑똑한 반려 강아지 로봇입니다.</p>
+                </li>
+            </a>
+        </ul>
+        
+    </section>
+
+   <section id="contact">
+    <h2>💬 건의 사항 및 문의</h2>
+    
+    <form class="contact-form">
+        
+        <div class="form-group">
+            <label for="name">이름</label>
+            <input type="text" id="name" placeholder="이름을 입력하세요.">
+        </div>
+
+        <div class="form-group">
+            <label for="email">이메일</label>
+            <input type="email" id="email" placeholder="답변 받을 이메일을 입력하세요.">
+        </div>
+
+        <div class="form-group">
+            <label for="type">문의 종류</label>
+            <select id="type">
+                <option>배송 및 결제 문의</option>
+                <option>A/S (수리) 접수</option>
+                <option>기타 쇼핑몰 건의 사항</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="message">건의 내용</label>
+            <textarea id="message" placeholder="건의하실 내용이나 궁금한 점을 자유롭게 적어주세요." rows="6"></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">건의사항 보내기</button>
+
+    </form>
+</section>
+</body>
+</html>
